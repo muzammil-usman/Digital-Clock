@@ -10,7 +10,7 @@ function currentTime() {
   } else {
     am_or_pm.innerText = "AM";
   }
-  if (hours > 12) {
+  if (hours >= 12) {
     hours = hours - 12;
   }
 
