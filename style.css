@@ -3,7 +3,7 @@
   padding: 0;
   list-style: none;
   scroll-behavior: smooth;
-  font-family: cursive, fantasy;
+  font-family: cursive;
 }
 .container {
   width: 100%;
@@ -14,8 +14,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.h1 {
+  font-size: 3rem;
 }
 .clock {
+  display: block;
   font-size: 5rem;
   &:hover {
     cursor: pointer;
@@ -23,6 +28,9 @@
 }
 
 @media screen and (max-width: 400px) {
+  .h1 {
+    font-size: 1.2rem;
+  }
   .clock {
     font-size: 1.5rem;
   }
@@ -30,5 +38,8 @@
 @media screen and (min-width: 401px) and (max-width: 700px) {
   .clock {
     font-size: 2rem;
+  }
+  .h1 {
+    font-size: 1.5rem;
   }
 }
